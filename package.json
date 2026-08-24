@@ -1,0 +1,22 @@
+{
+  "name": "coinrush",
+  "version": "1.0.0",
+  "description": "CoinRush — a modern virtual reward gaming platform where users can play fun games, collect virtual coins, complete challenges, and compete on the leaderboard.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linter configured\" && exit 0",
+    "build": "echo \"Static HTML project - no build required\" && exit 0"
+  },
+  "keywords": [
+    "gaming",
+    "coins",
+    "leaderboard",
+    "challenges"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
