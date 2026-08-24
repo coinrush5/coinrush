@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinRush</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0f19;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: auto;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #b8c0d0;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 0;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup {
+            background: #f5c542;
+            color: #111;
+        }
+
+        .login {
+            background: #202838;
+            color: white;
+        }
+
+        .form {
+            display: none;
+            margin-top: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #394255;
+            background: #151b29;
+            color: white;
+        }
+
+        .back {
+            background: transparent;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🪙 CoinRush</h1>
+
+    <p>
+        Play fun games, collect virtual coins,
+        complete challenges and compete on the leaderboard.
+    </p>
+
+    <button class="signup" onclick="showForm('signup')">
+        Create Account
+    </button>
+
+    <button class="login" onclick="showForm('login')">
+        Login
+    </button>
+
+    <div id="signup" class="form">
+        <h2>Create Account</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button class="signup" onclick="alert('Signup system will be connected in the next step.')">
+            Sign Up
+        </button>
+
+        <button class="back" onclick="hideForms()">Back</button>
+    </div>
+
+    <div id="login" class="form">
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button class="signup" onclick="alert('Login system will be connected in the next step.')">
+            Login
+        </button>
+
+        <button class="back" onclick="hideForms()">Back</button>
+    </div>
+
+</div>
+
+<script>
+function showForm(type) {
+    document.getElementById("signup").style.display =
+        type === "signup" ? "block" : "none";
+
+    document.getElementById("login").style.display =
+        type === "login" ? "block" : "none";
+}
+
+function hideForms() {
+    document.getElementById("signup").style.display = "none";
+    document.getElementById("login").style.display = "none";
+}
+</script>
+
+</body>
+</html>
